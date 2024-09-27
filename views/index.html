@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"> <!-- Đường dẫn đã sửa -->
+    <title>Tree Shop</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tree Shop</h1>
+
+        <!-- Form thêm cây mới -->
+        <form action="/add-tree" method="POST">
+            <input type="text" name="name" placeholder="Tree Name" required>
+            <textarea name="description" placeholder="Description" required></textarea>
+            <input type="text" name="image" placeholder="Image URL" required>
+            <button type="submit">Add</button>
+            <button type="reset" style="background-color: #d9534f;">Reset</button>
+        </form>
+
+        <!-- Bảng hiển thị danh sách cây -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dữ liệu cây sẽ được thêm vào bằng JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Số 8, Tôn Thất Thuyết, Cầu Giấy, Hà Nội
+    </footer>
+</body>
+
+</html>
